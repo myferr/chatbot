@@ -1,5 +1,9 @@
 "use client";
 
+if (localStorage.getItem("APIKEYREGISTERED") === "no") {
+  window.location.href = "/";
+}
+
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";

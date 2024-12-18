@@ -9,6 +9,7 @@ import {
 import { Input } from "./components/ui/input";
 
 export default function Home() {
+  localStorage.setItem("APIKEYREGISTERED", "no");
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <Card className="w-full max-w-2xl">
@@ -21,6 +22,7 @@ export default function Home() {
             className="w-full"
             onClick={() => {
               localStorage.clear();
+              localStorage.setItem("APIKEYREGISTERED", "yes");
               localStorage.setItem(
                 "APIKEY",
                 // @ts-expect-error
