@@ -1,9 +1,5 @@
 "use client";
 
-if (localStorage.length === 0) {
-  window.location.href = "/";
-}
-
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
